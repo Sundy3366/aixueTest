@@ -20,11 +20,23 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
+/**{margin:0px; padding:0px;}
+*:focus {outline: none;}
+
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0 none;}
+body{background-color: transparent;background:#f8f8f8; font-size:14px; font-family:"Lucida Grande", "Lucida Sans Unicode",Tahoma,Helvetica,Arial,Verdana,sans-serif; line-height:24px;color:#191919;-webkit-font-smoothing: antialiased;}
+
+ul,ol{list-style-type:none;}
+select,input{vertical-align:middle;font-size: 12px;}
+
+a{text-decoration:none; cursor:pointer;}
+a:link,a:visited{color:#191919;text-decoration: none;}
+a:hover,a:active,a:focus{text-decoration: none;}*/
 .font-blue {
-  color: #4CACEE; }
+  color: #4aacee; }
 
 .font-green {
-  color: #92D736; }
+  color: #92D733; }
 
 .font-red {
   color: #FF6666; }
@@ -47,13 +59,13 @@ ul, ol {
   box-shadow: 0 2px 8px 0 rgba(69, 91, 112, 0.18); }
 
 .container-default {
-  padding: 22px;
+  padding: 24px;
   color: #333; }
 
 .shiti-left {
   /*width: 60%;*/
   float: left;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   padding-right: 15px;
   /*padding: 10px;*/
   /*min-height: 100vh;*/ }
@@ -71,12 +83,13 @@ ul, ol {
   /*border: 1px solid;*/
   height: calc(100vh - 120px);
   overflow-y: auto;
-  box-shadow: 0 2px 8px 0 rgba(69, 91, 112, 0.18);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
   background: #fff; }
   .shiti-left-content .title-item {
     margin-bottom: 20px; }
     .shiti-left-content .title-item .title-default {
-      color: #4CACEE;
+      color: #4aacee;
       font-size: 18px;
       display: inline-block; }
     .shiti-left-content .title-item .title-score {
@@ -100,7 +113,8 @@ ul, ol {
     .shiti-right .shiti-right-paging li {
       flex: 1;
       background: #fff;
-      box-shadow: 0 2px 8px 0 rgba(69, 91, 112, 0.18); }
+      box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 2px; }
       .shiti-right .shiti-right-paging li a {
         color: #999; }
     .shiti-right .shiti-right-paging li:first-child {
@@ -115,9 +129,10 @@ ul, ol {
 .shiti-right-content, .wenda-right-content {
   padding: 24px;
   /*border: 1px solid;*/
-  height: calc(100vh - 210px);
+  height: calc(100vh - 200px);
   overflow-y: auto;
-  box-shadow: 0 2px 8px 0 rgba(69, 91, 112, 0.18);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
   background: #fff; }
 
 .shiti-right ul.danxuan li {
@@ -192,8 +207,8 @@ ul, ol {
 .shiti-right ul.danxuan li.answer-right a span.xuanxiang {
   width: 40px;
   height: 40px;
-  background: #92D736;
-  border: 1px solid #92D736;
+  background: #92d733;
+  border: 1px solid #92d733;
   color: #fff; }
 
 .shiti-right ul.duoxuan li.answer-error a span.xuanxiang {
@@ -206,18 +221,19 @@ ul, ol {
 .shiti-right ul.duoxuan li.answer-right a span.xuanxiang {
   width: 40px;
   height: 40px;
-  background: #92D736;
-  border: 1px solid #92D736;
+  background: #92d733;
+  border: 1px solid #92d733;
   color: #fff; }
 
 /*答题卡*/
 .answer-card {
-  box-shadow: 0 2px 8px 0 rgba(69, 91, 112, 0.18);
-  min-height: 85vh;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  height: calc(100vh - 120px);
   background: #fff;
   position: relative; }
   .answer-card .answer-card-option {
-    height: 70vh;
+    height: calc(100vh - 230px);
     overflow: auto; }
     .answer-card .answer-card-option .answer-card-ul {
       padding: 32px;
@@ -226,7 +242,7 @@ ul, ol {
       .answer-card .answer-card-option .answer-card-ul .answer-card-li span {
         display: inline-block;
         color: #fff;
-        background-color: #4CACEE;
+        background-color: #4aacee;
         width: 56px;
         height: 56px;
         line-height: 56px;
@@ -244,7 +260,7 @@ ul, ol {
     bottom: 40px;
     left: 50%;
     transform: translate(-50%, 0);
-    background: #4CACEE;
+    background: #4aacee;
     color: #fff;
     font-size: 24px; }
   .answer-card .save-paper-btn a:focus, .answer-card .save-paper-btn a:active {
