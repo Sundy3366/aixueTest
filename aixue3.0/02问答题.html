@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>两种样式横竖屏</title>
+    <meta name="description" content="中国最大的远程基础教育服务机构和网络学习社区，面向全国的中、小学生提供远程教育辅导。"/>
+    <meta name="keywords" content="网校,远程教育,四中"/>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8"/>
+    <!--<meta name="viewport" content="width=device-width; initial-scale=1.0">-->
+    <!--<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">-->
+    <!--<link rel="stylesheet" href="css/aixue20.css" type="text/css" media="screen"/>-->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css">
+    <link rel="stylesheet" media="all and (orientation:landscape)" href="css/landscape.css">
+
+</head>
+
+<body>
+<header class="header-default">
+    问答题
+</header>
+<div class="container-default">
+    <!--<div class="shiti-left col-lg-7 col-md-7 col-xs-12">-->
+    <div class="shiti-left">
+        <div class="shiti-left-content wenda-left-content">
+            <dl class="wenda-question-left">
+                <dd class="title-item"><span class="title-default">完形填空</span><span class="title-score">(2015 年北京高考真题）</span></dd>
+                <dt class="tigan">
+                        高尔基的《母亲》是世界文学史上第一部描写无产阶级革命斗争的著作？
+                </dt>
+            </dl>
+            <dl  class="wenda-answer-left">
+                <dd class="title-item"><span class="title-default">我的作答</span></dd>
+                <dt>高尔基的《母亲》是世界文学史上第一部描写无产阶级革命斗争的著作，列宁称它是
+                    “一部非常及时的书”。从文是我国现代文学中有风格、有艺术个性的作家。他的作
+                    品题材广泛，文笔清丽，语言清新活泼。《边城》、《湘行散记》最具代表性。</dt>
+            </dl>
+
+        </div>
+    </div>
+    <!--<div class="col-md-1"></div>-->
+    <div class="shiti-right">
+        <!--<div class="shiti-right col-lg-5 col-md-5 col-xs-12">-->
+        <div class="shiti-right-content wenda-right-content">
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<!--<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+<script>
+    //    $(document).on("pagecreate",function(event){
+    //        $(window).on("orientationchange",function(event){
+    //            if(window.orientation == 0)
+    //            {
+    //                $("p").text("方向已经变为 portrait!").css({"background-color":"yellow","font-size":"300%"});
+    //            }
+    //            else
+    //            {
+    //                $("p").text("方向已经变为 landscape!").css({"background-color":"pink","font-size":"200%"});
+    //            }
+    //        });
+    //    });
+</script>
+<!--<script>-->
+<!--//获取设备类型-->
+<!--var iPadType=getIPadType();-->
+<!--function getIPadType(){-->
+<!--var browser = {-->
+<!--versions: function() {-->
+<!--var u = navigator.userAgent,-->
+<!--app = navigator.appVersion;-->
+<!--return {-->
+<!--trident: u.indexOf('Trident') > -1, //IE内核-->
+<!--presto: u.indexOf('Presto') > -1, //opera内核-->
+<!--webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核-->
+<!--gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核-->
+<!--mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端-->
+<!--ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端-->
+<!--android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器-->
+<!--iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器-->
+<!--iPad: u.indexOf('iPad') > -1, //是否iPad-->
+<!--webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部-->
+<!--weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）-->
+<!--qq: u.match(/\sQQ/i) == " qq" //是否QQ-->
+<!--};-->
+<!--}(),-->
+<!--language: (navigator.browserLanguage || navigator.language).toLowerCase()-->
+<!--}-->
+<!--//检测ipad 和其他终端-->
+<!--if(browser.versions.iPad) {-->
+<!--//            alert("ipad");-->
+<!--//            $("shu").attr('href','css/portrait.css');-->
+<!--//            $('heng').attr('href','css/landscape.css')-->
+<!--$("<link>")-->
+<!--.attr({ rel: "stylesheet",-->
+<!--type: "text/css",-->
+<!--media:"all and (orientation:portrait)",-->
+<!--href: "css/portrait.css"-->
+<!--})-->
+<!--.appendTo("head");-->
+<!--$("<link>")-->
+<!--.attr({ rel: "stylesheet",-->
+<!--type: "text/css",-->
+<!--media:"all and (orientation:landscape)",-->
+<!--href: "css/landscape.css"-->
+<!--})-->
+<!--.appendTo("head");-->
+<!--return true;-->
+<!--}else{-->
+<!--$("<link>")-->
+<!--.attr({ rel: "stylesheet",-->
+<!--type: "text/css",-->
+<!--href: "css/portrait.css"-->
+<!--})-->
+<!--.appendTo("head");-->
+<!--}-->
+<!--}-->
+<!--</script>-->
+</html>

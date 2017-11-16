@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>两种样式横竖屏</title>
+    <meta name="description" content="中国最大的远程基础教育服务机构和网络学习社区，面向全国的中、小学生提供远程教育辅导。"/>
+    <meta name="keywords" content="网校,远程教育,四中"/>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8"/>
+    <!--<meta name="viewport" content="width=device-width; initial-scale=1.0">-->
+    <!--<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">-->
+    <!--<link rel="stylesheet" href="css/aixue20.css" type="text/css" media="screen"/>-->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css">
+    <link rel="stylesheet" media="all and (orientation:landscape)" href="css/landscape.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+<header class="header-default">
+    单选题
+</header>
+<div class="container-default">
+    <!--<div class="shiti-left col-lg-7 col-md-7 col-xs-12">-->
+    <div class="shiti-left">
+        <div class="shiti-left-content">
+            <div class="title-item"><span class="title-default">完形填空</span><span class="title-score">10分</span></div>
+            <div class="tigan">
+                One of the latest imports is acupuncture, the use of needles for ___21 ___
+                disease. Although acupuncture has been practiced in China for 2000 years, it's
+                ___22 ___ in the  Western world is still very ___23___. Several hospitals in the
+                United States are now experimenting with acupuncture as a way of treating
+                pains. An American journalist descried the process ___24 ___ its effects. To keep
+                the patient ___25___ feeling pain during the operation, four needles were used,
+                each about an inch and a half long. The tops of the needles were attached to
+                wires which led to a small electrical device.
+            </div>
+        </div>
+        <p></p>
+    </div>
+    <!--<div class="col-md-1"></div>-->
+    <div class="shiti-right">
+        <!--<div class="shiti-right col-lg-5 col-md-5 col-xs-12">-->
+        <div class="shiti-right-content">
+            <div class="shiti-right-questions">
+                21.The tops of the needles were attached
+            </div>
+            <ul class="danxuan">
+                <li class="crumb"><a href="1"><span class="xuanxiang">A</span>近体诗是</a></li>
+                <li><a href="1"><span class="xuanxiang">B</span>桐城派</a></li>
+                <li><a href="1"><span class="xuanxiang">C</span>从文是</a></li>
+                <li><a href="1"><span class="xuanxiang">D</span>高尔基</a></li>
+            </ul>
+        </div>
+        <ul class="shiti-right-paging">
+            <li class="disabled"><a href="1">上一题</a></li>
+            <li><a href="1">下一题</a></li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<!--<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+<script>
+    //    $(document).on("pagecreate",function(event){
+    //        $(window).on("orientationchange",function(event){
+    //            if(window.orientation == 0)
+    //            {
+    //                $("p").text("方向已经变为 portrait!").css({"background-color":"yellow","font-size":"300%"});
+    //            }
+    //            else
+    //            {
+    //                $("p").text("方向已经变为 landscape!").css({"background-color":"pink","font-size":"200%"});
+    //            }
+    //        });
+    //    });
+</script>
+<!--<script>-->
+    <!--//获取设备类型-->
+    <!--var iPadType=getIPadType();-->
+    <!--function getIPadType(){-->
+        <!--var browser = {-->
+            <!--versions: function() {-->
+                <!--var u = navigator.userAgent,-->
+                    <!--app = navigator.appVersion;-->
+                <!--return {-->
+                    <!--trident: u.indexOf('Trident') > -1, //IE内核-->
+                    <!--presto: u.indexOf('Presto') > -1, //opera内核-->
+                    <!--webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核-->
+                    <!--gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核-->
+                    <!--mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端-->
+                    <!--ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端-->
+                    <!--android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器-->
+                    <!--iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器-->
+                    <!--iPad: u.indexOf('iPad') > -1, //是否iPad-->
+                    <!--webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部-->
+                    <!--weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）-->
+                    <!--qq: u.match(/\sQQ/i) == " qq" //是否QQ-->
+                <!--};-->
+            <!--}(),-->
+            <!--language: (navigator.browserLanguage || navigator.language).toLowerCase()-->
+        <!--}-->
+        <!--//检测ipad 和其他终端-->
+        <!--if(browser.versions.iPad) {-->
+<!--//            alert("ipad");-->
+<!--//            $("shu").attr('href','css/portrait.css');-->
+<!--//            $('heng').attr('href','css/landscape.css')-->
+            <!--$("<link>")-->
+                <!--.attr({ rel: "stylesheet",-->
+                    <!--type: "text/css",-->
+                    <!--media:"all and (orientation:portrait)",-->
+                    <!--href: "css/portrait.css"-->
+                <!--})-->
+                <!--.appendTo("head");-->
+            <!--$("<link>")-->
+                <!--.attr({ rel: "stylesheet",-->
+                    <!--type: "text/css",-->
+                    <!--media:"all and (orientation:landscape)",-->
+                    <!--href: "css/landscape.css"-->
+                <!--})-->
+                <!--.appendTo("head");-->
+            <!--return true;-->
+        <!--}else{-->
+            <!--$("<link>")-->
+                <!--.attr({ rel: "stylesheet",-->
+                    <!--type: "text/css",-->
+                    <!--href: "css/portrait.css"-->
+                <!--})-->
+                <!--.appendTo("head");-->
+        <!--}-->
+    <!--}-->
+<!--</script>-->
+<script>
+    var evt = "onorientationchange" in window ? "orientationchange" : "resize";
+    var doc = document.documentElement;
+    window.addEventListener(evt, _resize, false);
+    window.addEventListener("DOMContentLoaded", _resize);
+    function _resize() {
+        doc.style.fontSize = 10 * (doc.clientWidth / 1280) + "px";
+    };
+</script>
+</html>

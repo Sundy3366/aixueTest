@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>爱学</title>
+    <meta name="description" content="中国最大的远程基础教育服务机构和网络学习社区，面向全国的中、小学生提供远程教育辅导。"/>
+    <meta name="keywords" content="网校,远程教育,四中"/>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">-->
+    <link rel="stylesheet" href="css/aixue20.css" type="text/css" media="screen"/>
+
+    <style>
+        .container{
+            padding: 20px;
+        }
+        .row{
+            margin: 0 auto;
+        }
+        .shiti-left{
+            /*width: 60%;*/
+            float: left;
+            margin-bottom: 20px;
+            padding: 10px;
+            /*min-height: 100vh;*/
+        }
+        .shiti-left h1 {
+            font-size: 1em;
+            line-height: 1.2em;
+            color: #324d82;
+            padding-bottom: 15px;
+            font-weight: normal;
+            min-height: 20px;
+        }
+        .shiti-left-content{
+            padding: 15px;
+            border: 1px solid;
+            min-height: 80vh;
+        }
+        .shiti-right{
+            /*width: 38%;*/
+            float: right;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .shiti-right-content{
+            padding: 15px;
+            border: 1px solid;
+            min-height: 80vh;
+        }
+        .shiti-right ul.danxuan li {
+            margin: 20px 0 40px 0;
+        }
+        .shiti-right ul.danxuan li a {
+            padding: 0 5px 0 45px;
+            display: block;
+            position: relative;
+        }
+
+        .shiti-right ul.danxuan li {margin:20px 0 40px 0;}
+        .shiti-right ul.danxuan li a {
+            padding: 0 5px 0 45px;
+            display:block;
+            position:relative;
+        }
+        .shiti-right ul.danxuan li a span.xuanxiang{
+            position: absolute;
+            color:#999;
+            background-color:#fff;
+            width:33px;
+            height:28px;
+            border:1px solid #c0c0c0;
+            border-radius:50%;
+            text-align:center;
+            padding-top:5px;
+            top:-5px;
+            left:0;
+        }
+
+        .shiti-right ul.danxuan li.crumb a span.xuanxiang{
+            color:#fff;
+            background-color:#4bacf0;
+            border:1px solid #4bacf0;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container row">
+    <div class="shiti-left col-lg-7 col-md-7 col-xs-12">
+        <div class="shiti-left-content">
+            <h1>单选题<b>（2015 年北京高考真题）</b></h1>
+            <div class="tigan">我是问题的题干噢~~~问题啊问题，问题啊问题，问题的题干~~~我是问题的题干噢~~~问题啊问题，问题啊问题，问题的题干~~~我是问题的题干噢~~~下列有关文学常识的表述，有误的一项是你猜我猜不猜（    ）</div>
+        </div>
+        <p></p>
+    </div>
+    <!--<div class="col-md-1"></div>-->
+    <div class="shiti-right col-lg-5 col-md-5 col-xs-12">
+        <div class="shiti-right-content">
+            <ul class="danxuan">
+                <li class="crumb"><a href="1"><span class="xuanxiang">A</span>近体诗是对唐代形成的律诗和绝句的通称。与古体诗相对而言，句数、字数和平仄、用韵等都有一定的格律。</a></li>
+                <li><a href="1"><span class="xuanxiang">B</span>桐城派是清代散文流派，代表作家有方苞、归有光、刘大、姚鼐等。</a></li>
+                <li><a href="1"><span class="xuanxiang">C</span>从文是我国现代文学中有风格、有艺术个性的作家。他的作品题材广泛，文笔清丽，语言清新活泼。《边城》、《湘行散记》最具代表性。</a></li>
+                <li><a href="1"><span class="xuanxiang">D</span>高尔基的《母亲》是世界文学史上第一部描写无产阶级革命斗争的著作，列宁称它是&ldquo;一部非常及时的书&rdquo;。</a></li>
+            </ul>
+        </div>
+        <p></p>
+    </div>
+</div>
+
+
+</body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+    $(document).on("pagecreate",function(event){
+        $(window).on("orientationchange",function(event){
+            if(window.orientation == 0)
+            {
+                $("p").text("方向已经变为 portrait!").css({"background-color":"yellow","font-size":"300%"});
+            }
+            else
+            {
+                $("p").text("方向已经变为 landscape!").css({"background-color":"pink","font-size":"200%"});
+            }
+        });
+    });
+</script>
+</html>

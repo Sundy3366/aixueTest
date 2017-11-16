@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>传参</title>
+</head>
+<body>
+    <div id="modal8"></div>
+    <div id="modal6"></div>
+</body>
+<script src="../jquery-2.1.4.min.js"></script>
+<script>
+    var _planType =1,
+        status = 6;
+
+    if(status != 'undefined'){
+        //关掉定时器
+//        enable_timer_10 = false;
+//        perTimeTarget = false;
+//        totalTimesTarget = false;
+        if (status ==1){
+            //提示完成,查看报告
+            //是完成，回首页
+            var _plantips = '计划结束';
+            var _singlePlantips = '训练结束';
+            watchPlanReport(_plantips,_singlePlantips)
+
+        }else if(status ==6){
+            //提示时间到,作答结束,查看报告
+            var _plantips = '时间到, 作答结束';
+            var _singlePlantips = '时间到，作答结束';
+            watchPlanReport(_plantips,_singlePlantips)
+        }
+        function watchPlanReport(_plantips,_singlePlantips) {
+            if(_planType == 1){
+//                if(rps.data.planStatus ==5){
+//                    window.location = "http://www.ai-classes.com/bjqy/user?m=toIndex";
+//                }
+                //关掉定时器
+                //弹计划完成窗口
+                var modal8List = '<div class="modal-content"><h4>提示</h4><p>'+_plantips+'</p></div>';
+                $("#modal8").html(modal8List);
+                //弹出一个提示框
+//                $('#modal8').modal({
+//                    out_duration: 10,
+//                    dismissible: false,
+//                    ending_top: '40%'
+//                }).modal('open');
+                setTimeout(function(){
+//                    $('#modal8').modal("close");
+                    try
+                    {
+                        window.opener.refreshTaskList()
+                    }
+                    catch(err)
+                    {
+                        //alert("温馨提示:请回到主页点击刷新哦!~")
+                    }
+                    window.location = 'http://baidu.com'
+                },3000)
+            }else if(_planType == 2){
+                //弹单项完成的窗口
+                var modal6List = '<div class="modal-content"><h4>提示</h4><p>'+_singlePlantips+'</p></div>';
+
+                $("#modal6").html(modal6List);
+                //弹出一个提示框
+//                $('#modal6').modal({
+//                    out_duration: 10,
+//                    dismissible: false,
+//                    ending_top: '40%'
+//                }).modal('open');
+//                setTimeout(function(){
+//                    $('#modal6').modal("close");
+//                    try
+//                    {
+//                        window.opener.refreshTaskList()
+//                    }
+//                    catch(err)
+//                    {
+//                        //alert("温馨提示:请回到主页点击刷新哦!~")
+//                    }
+//                    window.location = 'singleTrainingReport.html?planId='+_planId+'&subjectId='+_subjectId+'&gradeId='+_gradeId+'&accessToken='+_accessToken;
+//                },3000)
+            }
+        }
+    }
+</script>
+</html>
